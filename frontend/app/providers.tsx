@@ -64,7 +64,6 @@ export function Providers({ children }: Props) {
     <MetaMaskProvider>
       <MetaMaskEthersSignerProvider initialMockChains={{
         31337: "http://localhost:8545", // Enable mock for local development
-        11155111: undefined // Sepolia mainnet (no mock needed)
       }}>
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>

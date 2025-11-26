@@ -286,7 +286,7 @@ export const useEncryptedStudyTracker = (parameters: {
     const notDecrypting = !isDecryptingDaily;
     // For simplified contract, check if we have a non-zero plain value
     const hasValue = dailyStudyTimeHandle && dailyStudyTimeHandle !== "0" && dailyStudyTimeHandle !== ethers.ZeroHash;
-    const notAlreadyDecrypted = !clearDailyTime || clearDailyTime.value !== dailyStudyTimeHandle;
+    const notAlreadyDecrypted = !clearDailyTime || clearDailyTime.clear !== dailyStudyTimeHandle;
 
     const result = Boolean(
       hasAddress &&
@@ -330,7 +330,7 @@ export const useEncryptedStudyTracker = (parameters: {
       totalStudyTimeHandle &&
       totalStudyTimeHandle !== "0" &&
       totalStudyTimeHandle !== ethers.ZeroHash && // fhe handle not initialized
-      (!clearTotalTime || clearTotalTime.value !== totalStudyTimeHandle) // not yet decrypted
+      (!clearTotalTime || clearTotalTime.clear !== totalStudyTimeHandle) // not yet decrypted
     );
   }, [
     studyTracker.address,

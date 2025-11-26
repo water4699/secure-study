@@ -13,7 +13,6 @@ export const EncryptedStudyTrackerDemo = () => {
   const {
     provider,
     chainId,
-    accounts,
     isConnected,
     connect,
     ethersSigner,
@@ -282,7 +281,7 @@ export const EncryptedStudyTrackerDemo = () => {
               <StatusItem
                 label="Contract"
                 value={studyTracker.isDeployed ? "Deployed" : "Not Deployed"}
-                isGood={studyTracker.isDeployed}
+                isGood={!!studyTracker.isDeployed}
               />
               <StatusItem
                 label="Network"
