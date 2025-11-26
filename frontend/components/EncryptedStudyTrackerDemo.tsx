@@ -69,15 +69,15 @@ export const EncryptedStudyTrackerDemo = () => {
 
   if (!isConnected) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[60vh] gap-6">
-        <div className="text-center space-y-4">
-          <h2 className="text-3xl font-bold text-gray-800">Welcome to Encrypted Study Tracker</h2>
-          <p className="text-gray-600 text-lg">
+      <div className="flex flex-col items-center justify-center min-h-[60vh] gap-8">
+        <div className="text-center space-y-4 max-w-2xl">
+          <h2 className="text-4xl font-bold text-gray-800">Welcome to Encrypted Study Tracker</h2>
+          <p className="text-gray-600 text-xl">
             Privacy-preserving learning time tracking with FHEVM
           </p>
         </div>
         <button
-          className="btn-primary inline-flex items-center justify-center rounded-xl px-8 py-4 font-semibold text-white shadow-lg text-lg"
+          className="btn-primary inline-flex items-center justify-center rounded-xl px-10 py-5 font-semibold text-white shadow-lg text-xl hover:shadow-xl transition-shadow"
           onClick={connect}
         >
           Connect Wallet
