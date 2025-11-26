@@ -43,8 +43,9 @@ npm install
 cd ..
 ```
 
-### 2. Start Local Development Environment
+### 2. Choose Your Network
 
+#### Option A: Local Development (Recommended for testing)
 ```bash
 # Start local Hardhat node (in one terminal)
 npm run local-node
@@ -56,15 +57,41 @@ npm run deploy-local
 npm run frontend-dev
 ```
 
+#### Option B: Sepolia Testnet (Production-like environment)
+```bash
+# Set your environment variables
+export INFURA_API_KEY="b18fb7e6ca7045ac83c41157ab93f990"
+
+# Deploy to Sepolia testnet
+npm run deploy-sepolia
+
+# Start frontend (will connect to Sepolia)
+cd frontend && npm run dev
+```
+
 ### 3. Access the Application
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### 4. Connect Wallet and Test
 
-1. Click "Connect to MetaMask" to connect your wallet
+1. Click "Connect Wallet" to connect your wallet
+   - **Local Development**: Use any account from Hardhat node (has 10,000 ETH)
+   - **Sepolia Testnet**: Use MetaMask with Sepolia network (needs test ETH)
 2. Enter study time in minutes and click "Record Study Time"
 3. Click "Decrypt Daily Time" or "Decrypt Total Time" to view your study data
+
+### 5. Network Information
+
+**Local Development (Chain ID: 31337)**
+- Contract: `0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512`
+- RPC: `http://localhost:8545`
+- Free test accounts with 10,000 ETH each
+
+**Sepolia Testnet (Chain ID: 11155111)**
+- Contract: `0xBdfEb9bb6889d5a96340A04C8e8Cb6442936f0C6`
+- RPC: `https://sepolia.infura.io/v3/YOUR_INFURA_KEY`
+- Requires test ETH from [Sepolia Faucet](https://sepoliafaucet.com/)
 
 ## Available Scripts
 
