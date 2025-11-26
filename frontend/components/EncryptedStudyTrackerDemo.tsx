@@ -74,7 +74,7 @@ export const EncryptedStudyTrackerDemo = () => {
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold text-gray-800">Welcome to Encrypted Study Tracker</h2>
           <p className="text-gray-600 text-lg">
-            Privacy-preserving learning time tracking using FHEVM
+            Privacy-preserving learning time tracking with FHEVM
           </p>
         </div>
         <button

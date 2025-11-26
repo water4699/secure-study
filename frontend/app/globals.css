@@ -17,7 +17,7 @@ body {
   background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
 }
 
-/* 卡片阴影效果 */
+/* Card shadow effects */
 .card-shadow {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.3s ease;
@@ -27,7 +27,7 @@ body {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* 按钮动画 */
+/* Button animations */
 .btn-primary {
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
   transition: all 0.3s ease;
@@ -42,7 +42,7 @@ body {
   transform: translateY(0);
 }
 
-/* 加载动画 */
+/* Loading animations */
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -53,12 +53,12 @@ body {
   animation: spin 1s linear infinite;
 }
 
-/* 渐变背景 */
+/* Gradient backgrounds */
 .gradient-bg {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-/* 成功/错误提示动画 */
+/* Success/error notification animations */
 @keyframes slideIn {
   from {
     opacity: 0;
