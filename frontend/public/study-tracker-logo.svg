@@ -1,0 +1,30 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="55" fill="#1a1a1a" stroke="#333" stroke-width="2"/>
+
+  <!-- Book -->
+  <rect x="25" y="35" width="25" height="30" rx="2" fill="#4A90E2"/>
+  <rect x="27" y="37" width="21" height="26" fill="#ffffff"/>
+  <line x1="32" y1="40" x2="44" y2="40" stroke="#4A90E2" stroke-width="1"/>
+  <line x1="32" y1="45" x2="44" y2="45" stroke="#4A90E2" stroke-width="1"/>
+  <line x1="32" y1="50" x2="44" y2="50" stroke="#4A90E2" stroke-width="1"/>
+  <line x1="32" y1="55" x2="40" y2="55" stroke="#4A90E2" stroke-width="1"/>
+
+  <!-- Clock -->
+  <circle cx="80" cy="50" r="12" fill="#FFD700" stroke="#333" stroke-width="1"/>
+  <!-- Clock hands -->
+  <line x1="80" y1="50" x2="80" y2="42" stroke="#333" stroke-width="1" stroke-linecap="round"/>
+  <line x1="80" y1="50" x2="86" y2="50" stroke="#333" stroke-width="1" stroke-linecap="round"/>
+  <!-- Clock center dot -->
+  <circle cx="80" cy="50" r="1" fill="#333"/>
+
+  <!-- Lock symbol (for encryption) -->
+  <rect x="72" y="70" width="16" height="12" rx="2" fill="#FFD700" stroke="#333" stroke-width="1"/>
+  <rect x="76" y="76" width="8" height="6" fill="#ffffff"/>
+  <!-- Lock shackle -->
+  <path d="M 78 70 Q 78 65 83 65 Q 88 65 88 70" stroke="#FFD700" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Study text -->
+  <text x="60" y="105" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" font-weight="bold">STUDY</text>
+  <text x="60" y="115" text-anchor="middle" fill="#4A90E2" font-family="Arial, sans-serif" font-size="8" font-weight="bold">TRACKER</text>
+</svg>

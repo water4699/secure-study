@@ -23,3 +23,35 @@ tmp
 coverage.json
 pnpm-lock.yaml
 yarn.lock
+
+# Other project folders (not part of secure-study)
+A-zama/
+Done/
+Vote_Backup/
+Vote_Backup_/
+Vote_Backup_20251125_130950/
+althlete/
+artifact-cipher/
+biblock-entry-backup/
+biblock-entry.zip
+biblock-entry/
+capsule-id-vault/
+cipher-scribe/
+encrypt-hobby/
+fhevm-hardhat-template0/
+fhevm/
+health-lock (2)/
+health-lock/
+lucid-cipher-dreams/
+secure-career (2)/
+secure-career/
+secure-data/
+secure-fit/
+secure-study.zip
+secure-survey-clean/
+secure-survey000/
+time-lock/
+votechain-ballot (2)/
+zama-9/
+*.mp4
+*.zip

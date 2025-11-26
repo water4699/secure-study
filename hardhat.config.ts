@@ -6,11 +6,12 @@ import "@typechain/hardhat";
 import "hardhat-deploy";
 import "hardhat-gas-reporter";
 import type { HardhatUserConfig } from "hardhat/config";
-import { vars } from "hardhat/config";
+import { vars } from "hardhat/config.js";
 import "solidity-coverage";
 
-import "./tasks/accounts";
-import "./tasks/FHECounter";
+// import "./tasks/accounts.js";
+// import "./tasks/FHECounter.js";
+// import "./tasks/EncryptedStudyTracker.js";
 
 // Run 'npx hardhat vars setup' to see the list of variables that need to be set
 
@@ -38,6 +39,25 @@ const config: HardhatUserConfig = {
         mnemonic: MNEMONIC,
       },
       chainId: 31337,
+      // Enable FHEVM for local development
+      fhevm: {
+        protocol: "fhevm",
+        version: "1.0",
+      },
+    },
+    localhost: {
+      accounts: {
+        mnemonic: MNEMONIC,
+        path: "m/44'/60'/0'/0/",
+        count: 10,
+      },
+      chainId: 31337,
+      url: "http://localhost:8545",
+      // Enable FHEVM for local development
+      fhevm: {
+        protocol: "fhevm",
+        version: "1.0",
+      },
     },
     anvil: {
       accounts: {
