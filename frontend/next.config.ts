@@ -23,13 +23,11 @@ const nextConfig: NextConfig = {
   experimental: {
     // This helps reduce external API calls
   },
-  // Configure webpack to avoid certain external dependencies
-  webpack: (config, { dev }) => {
-    if (dev) {
-      // Disable webpack dev server telemetry
-      config.devServer = config.devServer || {};
-      config.devServer.client = config.devServer.client || {};
-      config.devServer.client.overlay = false;
+  // Configure webpack for production builds
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    // Optimize for production builds
+    if (!dev) {
+      // Add any production-specific webpack configurations here
     }
     return config;
   },
