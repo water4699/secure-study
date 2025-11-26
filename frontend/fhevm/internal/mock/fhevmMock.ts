@@ -58,25 +58,8 @@ export const fhevmMockCreateInstance = async (parameters: {
     KMSVerifierAddress: `0x${string}`;
   };
 }): Promise<FhevmInstance> => {
-  try {
-    // Try to use the real mock utils if available
-    const { MockFhevmInstance } = await import("@fhevm/mock-utils");
-    const provider = new JsonRpcProvider(parameters.rpcUrl);
-    const instance = await MockFhevmInstance.create(provider, provider, {
-      aclContractAddress: parameters.metadata.ACLAddress,
-      chainId: parameters.chainId,
-      gatewayChainId: 55815,
-      inputVerifierContractAddress: parameters.metadata.InputVerifierAddress,
-      kmsContractAddress: parameters.metadata.KMSVerifierAddress,
-      verifyingContractAddressDecryption:
-        "0x5ffdaAB0373E62E2ea2944776209aEf29E631A64",
-      verifyingContractAddressInputVerification:
-        "0x812b06e1CDCE800494b79fFE4f925A504a9A9810",
-    });
-    return instance;
-  } catch (error) {
-    console.warn("[fhevmMockCreateInstance] @fhevm/mock-utils not available, using fallback:", error);
-    // Fallback to minimal implementation
-    return createMinimalLocalMockInstance(parameters);
-  }
+  // Since @fhevm/mock-utils is removed from dependencies to fix production builds,
+  // we always use the fallback implementation
+  console.warn("[fhevmMockCreateInstance] Using minimal fallback - FHE operations will not work in production");
+  return createMinimalLocalMockInstance(parameters);
 };
