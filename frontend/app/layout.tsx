@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
 import Image from "next/image";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { EnglishConnectButton } from "../components/EnglishConnectButton";
 
 export const metadata: Metadata = {
   title: "Encrypted Study Tracker",
@@ -38,7 +38,7 @@ export default async function RootLayout({
                     <p className="text-xs text-gray-500">FHEVM Encrypted</p>
                   </div>
                 </div>
-                <ConnectButton />
+                <EnglishConnectButton />
               </div>
             </nav>
             <div className="flex-1 py-8">

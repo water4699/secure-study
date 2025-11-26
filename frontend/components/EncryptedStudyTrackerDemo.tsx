@@ -69,8 +69,8 @@ export const EncryptedStudyTrackerDemo = () => {
 
   if (!isConnected) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[60vh] gap-8">
-        <div className="text-center space-y-4 max-w-2xl">
+      <div className="flex flex-col items-center justify-center min-h-[60vh] gap-8 w-full">
+        <div className="text-center space-y-4 max-w-2xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-800">Welcome to Encrypted Study Tracker</h2>
           <p className="text-gray-600 text-xl">
             Privacy-preserving learning time tracking with FHEVM
