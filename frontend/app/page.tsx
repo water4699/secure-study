@@ -1,4 +1,4 @@
-import { EncryptedStudyTrackerDemo } from "@/components/EncryptedStudyTrackerDemo";
+import { EncryptedStudyTrackerDemo } from "../components/EncryptedStudyTrackerDemo";
 
 export default function Home() {
   return (

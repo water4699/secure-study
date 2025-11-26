@@ -5,7 +5,7 @@ import { ethers } from "ethers";
 import { useFhevm } from "../fhevm/useFhevm";
 import { useInMemoryStorage } from "../hooks/useInMemoryStorage";
 import { useMetaMaskEthersSigner } from "../hooks/metamask/useMetaMaskEthersSigner";
-import { useEncryptedStudyTracker } from "@/hooks/useEncryptedStudyTracker";
+import { useEncryptedStudyTracker } from "../hooks/useEncryptedStudyTracker";
 import { errorNotDeployed } from "./ErrorNotDeployed";
 
 export const EncryptedStudyTrackerDemo = () => {

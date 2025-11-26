@@ -10,9 +10,9 @@ import {
   useState,
 } from "react";
 
-import { FhevmInstance } from "@/fhevm/fhevmTypes";
-import { FhevmDecryptionSignature } from "@/fhevm/FhevmDecryptionSignature";
-import { GenericStringStorage } from "@/fhevm/GenericStringStorage";
+import { FhevmInstance } from "../fhevm/fhevmTypes";
+import { FhevmDecryptionSignature } from "../fhevm/FhevmDecryptionSignature";
+import { GenericStringStorage } from "../fhevm/GenericStringStorage";
 
 // Simple logger for development
 const isDev = process.env.NODE_ENV === 'development';
@@ -33,8 +33,8 @@ const logger = {
   - <root>/packages/site/abi/abi/EncryptedStudyTrackerABI.ts
   - <root>/packages/site/abi/abi/EncryptedStudyTrackerAddresses.ts
 */
-import { EncryptedStudyTrackerAddresses } from "@/abi/EncryptedStudyTrackerAddresses";
-import { EncryptedStudyTrackerABI } from "@/abi/EncryptedStudyTrackerABI";
+import { EncryptedStudyTrackerAddresses } from "../abi/EncryptedStudyTrackerAddresses";
+import { EncryptedStudyTrackerABI } from "../abi/EncryptedStudyTrackerABI";
 
 export type ClearValueType = {
   handle: string;
