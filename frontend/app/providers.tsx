@@ -35,16 +35,15 @@ const sepolia = {
   },
 } as const;
 
-// Use a local-only config for RainbowKit to avoid external API calls
+// Use RainbowKit config with Sepolia support
 const config = getDefaultConfig({
   appName: "Encrypted Study Tracker",
-  projectId: "your-project-id", // Use a valid project ID or disable analytics
+  projectId: "ef3325a718834a2b1b4134d3f520933d", // WalletConnect Project ID
   chains: [localhost, sepolia],
   ssr: true,
-  // Disable analytics and other external features for local development
-  appDescription: "Encrypted Study Tracker - Local Development",
-  appUrl: "http://localhost:3000", // Match the actual server port
-  appIcon: "http://localhost:3000/study-tracker-logo.svg", // Full URL for icon
+  appDescription: "Privacy-preserving learning time tracking with FHEVM",
+  appUrl: "http://localhost:3000",
+  appIcon: "http://localhost:3000/study-tracker-logo.svg",
 });
 
 const queryClient = new QueryClient({

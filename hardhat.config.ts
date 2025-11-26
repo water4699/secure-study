@@ -69,11 +69,9 @@ const config: HardhatUserConfig = {
       url: "http://localhost:8545",
     },
     sepolia: {
-      accounts: {
-        mnemonic: MNEMONIC,
-        path: "m/44'/60'/0'/0/",
-        count: 10,
-      },
+      accounts: [
+        "0x" + "7bcbe27ab27a2abae41389d8e5c77874fec3cff61e19d0125c0e78ee3f8bbbcf"
+      ],
       chainId: 11155111,
       url: `https://sepolia.infura.io/v3/${INFURA_API_KEY}`,
     },
