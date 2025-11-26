@@ -86,7 +86,7 @@ export const FHECounterDemo = () => {
           disabled={isConnected}
           onClick={connect}
         >
-          <span className="text-4xl p-6">Connect to MetaMask</span>
+          <span className="text-4xl p-6">Connect Wallet</span>
         </button>
       </div>
     );
